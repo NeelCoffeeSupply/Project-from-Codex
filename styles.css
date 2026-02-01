@@ -182,7 +182,7 @@ img {
   border-radius: 22px;
   box-shadow: var(--shadow);
   overflow: hidden;
-  transform: translateY(-12px);
+  transform: translateY(-24px);
 }
 
 .hero-card-content {
