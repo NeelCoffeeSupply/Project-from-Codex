@@ -182,7 +182,8 @@ img {
   border-radius: 22px;
   box-shadow: var(--shadow);
   overflow: hidden;
-  transform: translateY(-24px);
+  align-self: start;
+  transform: translateY(-36px);
 }
 
 .hero-card-content {
@@ -365,6 +366,54 @@ img {
 .contact-details a {
   font-weight: 600;
   font-size: 1.05rem;
+}
+
+.contact-form {
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  justify-self: start;
+  background: #fff;
+  color: var(--espresso);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .contact-image img {
