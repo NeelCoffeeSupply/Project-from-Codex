@@ -30,7 +30,7 @@
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
         </div>
-        <a class="button primary" href="#contact">Get a quote</a>
+        <a class="button primary" href="#quote-modal">Get a quote</a>
       </nav>
     </header>
 
@@ -50,7 +50,7 @@
             reorders.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Schedule a quick consult</a>
+            <a class="button primary" href="#quote-modal">Schedule a quick consult</a>
             <a class="button ghost" href="#how-it-works">See how it works</a>
           </div>
           <div class="hero-highlights">
@@ -72,7 +72,7 @@
           <div class="hero-image-stack">
             <img
               class="hero-image primary"
-              src="https://images.unsplash.com/photo-1505773278895-7f9927f5cf61?auto=format&fit=crop&w=1400&q=80"
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80"
               alt="Office team with coffee service"
             />
             <img
@@ -288,6 +288,48 @@
         </div>
       </section>
     </main>
+
+    <section id="quote-modal" class="quote-modal" aria-label="Get a quote form">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="quote-title">
+        <a class="modal-close" href="#" aria-label="Close quote form">×</a>
+        <h2 id="quote-title">Get a quote</h2>
+        <p>Share a few details and we’ll respond with a simple monthly coffee plan.</p>
+        <form
+          class="quote-form"
+          action="mailto:info.neelcoffeesupply@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-grid">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" />
+            </label>
+            <label>
+              Work Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" />
+            </label>
+            <label>
+              Team Size
+              <input type="text" name="team_size" placeholder="e.g., 25-50" />
+            </label>
+          </div>
+          <label>
+            Notes
+            <textarea name="notes" rows="4" placeholder="Coffee format, delivery timing, or special requests"></textarea>
+          </label>
+          <button class="button primary" type="submit">Send my request</button>
+        </form>
+      </div>
+    </section>
 
     <footer class="footer">
       <div>

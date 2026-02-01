@@ -139,7 +139,10 @@ img {
 
 .brand-banner img {
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 12px;
+  border: 1px solid rgba(94, 74, 67, 0.1);
   border-radius: 26px;
   box-shadow: var(--shadow);
 }
@@ -195,6 +198,8 @@ img {
 .hero-image-stack {
   position: relative;
   min-height: 360px;
+  overflow: hidden;
+  border-radius: 22px;
 }
 
 .hero-image {
@@ -210,9 +215,9 @@ img {
 
 .hero-image.secondary {
   position: absolute;
-  width: 55%;
-  right: -10px;
-  bottom: -20px;
+  width: 52%;
+  right: 12px;
+  bottom: 12px;
   border: 6px solid var(--cream);
 }
 
@@ -442,6 +447,85 @@ img {
   border-radius: 26px;
 }
 
+.quote-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 12, 11, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 20;
+}
+
+.quote-modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-card {
+  background: var(--card);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 32px;
+  max-width: 620px;
+  width: min(100%, 620px);
+  position: relative;
+}
+
+.modal-card h2 {
+  margin-bottom: 8px;
+  color: var(--espresso);
+}
+
+.modal-card p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 1.5rem;
+  color: var(--muted);
+}
+
+.quote-form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.quote-form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--espresso);
+  display: grid;
+  gap: 8px;
+}
+
+.quote-form input,
+.quote-form textarea {
+  border: 1px solid rgba(94, 74, 67, 0.2);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #fff;
+}
+
+.quote-form textarea {
+  resize: vertical;
+}
+
 .footer {
   background: var(--coffee);
   color: white;
@@ -517,6 +601,10 @@ img {
 
   .contact-card {
     padding: 26px;
+  }
+
+  .modal-card {
+    padding: 24px;
   }
 }
 
