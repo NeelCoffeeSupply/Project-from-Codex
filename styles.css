@@ -208,6 +208,31 @@ img {
   margin-bottom: 8px;
 }
 
+.card-subtitle {
+  font-weight: 500;
+  color: var(--accent-dark);
+  margin-bottom: 12px;
+}
+
+.card-list {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  margin: 16px 0;
+  color: var(--muted);
+}
+
+.card-list li::before {
+  content: "✓";
+  margin-right: 8px;
+  color: var(--accent-dark);
+}
+
+.card-footnote {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .section {
   max-width: 1200px;
   margin: 0 auto;
