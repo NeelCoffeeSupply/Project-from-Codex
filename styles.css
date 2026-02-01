@@ -188,6 +188,19 @@ img {
   padding: 24px;
 }
 
+.hero-card-image {
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: 0 12px 24px rgba(31, 26, 25, 0.12);
+}
+
+.hero-card-image img {
+  border-radius: 0;
+  height: 180px;
+  object-fit: cover;
+}
+
 .card-title {
   font-weight: 600;
   margin-bottom: 8px;
