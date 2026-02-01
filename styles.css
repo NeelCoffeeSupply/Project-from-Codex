@@ -80,9 +80,10 @@ img {
 }
 
 .logo img {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 58px;
   object-fit: cover;
+  object-position: center;
   border-radius: 12px;
   box-shadow: var(--shadow);
 }
@@ -141,11 +142,11 @@ img {
 }
 
 .brand-banner img {
-  height: 220px;
-  object-fit: contain;
-  background: #ffffff;
-  padding: 12px;
-  border: 1px solid rgba(94, 74, 67, 0.1);
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  background: transparent;
+  padding: 0;
   border-radius: 26px;
   box-shadow: var(--shadow);
 }
@@ -561,8 +562,8 @@ img {
   }
 
   .logo img {
-    width: 42px;
-    height: 42px;
+    width: 52px;
+    height: 52px;
   }
 
   .brand-banner {
@@ -571,7 +572,7 @@ img {
   }
 
   .brand-banner img {
-    height: 180px;
+    height: 210px;
   }
 
   .hero {
@@ -634,7 +635,7 @@ img {
   }
 
   .brand-banner img {
-    height: 160px;
+    height: 190px;
   }
 
   .stats {
