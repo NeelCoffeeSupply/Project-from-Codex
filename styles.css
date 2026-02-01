@@ -427,6 +427,67 @@ img {
   }
 }
 
+@media (max-width: 720px) {
+  .nav {
+    padding: 14px 18px;
+  }
+
+  .hero {
+    padding: 48px 18px 28px;
+  }
+
+  .hero-image.primary {
+    height: 280px;
+  }
+
+  .hero-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 56px 18px;
+  }
+
+  .stats {
+    gap: 14px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .gallery-grid img {
+    height: 180px;
+  }
+
+  .contact-card {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 560px) {
+  .button {
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-image.primary {
+    height: 240px;
+  }
+
+  .hero-card {
+    padding: 20px;
+  }
+
+  .stats {
+    text-align: left;
+  }
+}
+
 @media (max-width: 860px) {
   .nav-links {
     display: none;
