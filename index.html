@@ -19,10 +19,17 @@
   <body>
     <header class="site-header">
       <nav class="nav">
-        <div class="logo">Neel Coffee Supply</div>
+        <a class="logo" href="#">
+          <span class="logo-mark" aria-hidden="true">☕</span>
+          <span class="logo-text">
+            <span class="logo-name">Neel Coffee</span>
+            <span class="logo-tagline">Supply</span>
+          </span>
+        </a>
         <div class="nav-links">
           <a href="#services">Services</a>
           <a href="#how-it-works">How it works</a>
+          <a href="#our-story">Our story</a>
           <a href="#plans">Plans</a>
           <a href="#contact">Contact</a>
         </div>
@@ -60,15 +67,27 @@
           </div>
         </div>
         <div class="hero-card">
-          <img
-            src="https://images.unsplash.com/photo-1505773278895-7f9927f5cf61?auto=format&fit=crop&w=1200&q=80"
-            alt="Office team with coffee service"
-          />
           <div class="hero-card-content">
+            <div class="hero-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+                alt="Office team collaborating with coffee"
+              />
+            </div>
             <p class="card-title">Office-ready coffee, every month.</p>
+            <p class="card-subtitle">A dedicated partner for modern workplace coffee programs.</p>
             <p>
               We plan inventory, delivery cadence, and format so your team gets a steady coffee experience
-              without the guesswork.
+              without the guesswork. From onboarding to monthly restocks, we manage the details that keep
+              the coffee bar running smoothly.
+            </p>
+            <ul class="card-list">
+              <li>Usage-based planning to avoid last-minute reorders.</li>
+              <li>Flexible formats for pods, drip, cold brew, and bulk.</li>
+              <li>Equipment guidance and service check-ins for admins.</li>
+            </ul>
+            <p class="card-footnote">
+              Tell us your team size and we will build a plan that scales with your office.
             </p>
           </div>
         </div>
@@ -76,10 +95,10 @@
 
       <section id="services" class="section services">
         <div class="section-heading">
-          <h2>Office coffee that runs itself</h2>
+          <h2>Premium office coffee service, fully managed</h2>
           <p>
-            We simplify the full office coffee experience: reliable supply, flexible formats, and proactive
-            service to keep everything running smoothly.
+            Give your team a café-quality experience without the hassle. We handle beans, brewers, and
+            restocks so your kitchen stays stocked and your employees stay energized.
           </p>
         </div>
         <div class="grid three">
@@ -88,9 +107,10 @@
               src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?auto=format&fit=crop&w=900&q=80"
               alt="Coffee beans and cups"
             />
-            <h3>Consistent coffee supply</h3>
+            <h3>Always-stocked essentials</h3>
             <p>
-              We monitor usage trends and keep your coffee and essentials stocked so employees never run out.
+              From beans and pods to filters and cups, we keep supplies topped up so your coffee station
+              never runs dry.
             </p>
           </article>
           <article>
@@ -98,10 +118,10 @@
               src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=80"
               alt="Modern office coffee setup"
             />
-            <h3>Flexible formats</h3>
+            <h3>Brewers & formats that fit your space</h3>
             <p>
-              Pods, drip, bulk, or a hybrid setup. We match your coffee format to your office layout and
-              preferences.
+              Single-serve, drip, cold brew, or espresso-style setups. We match equipment and coffee style
+              to your team size and workflow.
             </p>
           </article>
           <article>
@@ -109,10 +129,10 @@
               src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=80"
               alt="Coffee station and accessories"
             />
-            <h3>Simple equipment guidance</h3>
+            <h3>Service that stays on schedule</h3>
             <p>
-              Need help choosing or maintaining gear? We provide clear guidance and support to keep coffee
-              flowing without extra complexity.
+              We set a delivery cadence, handle proactive check-ins, and help with equipment guidance so
+              your office coffee program stays effortless.
             </p>
           </article>
         </div>
@@ -122,6 +142,31 @@
         <div class="section-heading">
           <h2>Easy steps to dependable office coffee</h2>
           <p>We make office coffee simple with a repeatable, low-effort process.</p>
+        </div>
+        <div class="how-it-works-media">
+          <div class="video-card">
+            <p class="video-title">See the workflow in action</p>
+            <video
+              controls
+              preload="none"
+              poster="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
+            >
+              <source src="https://cdn.coverr.co/videos/coverr-coffee-beans-1579501265364/1080p.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-details">
+            <h3>How it works</h3>
+            <p>
+              Watch a quick walkthrough of how we assess your needs, set delivery cadence, and keep coffee
+              stocked without admin overhead.
+            </p>
+            <ul>
+              <li>Discovery call and format recommendations.</li>
+              <li>Inventory planning and monthly restocks.</li>
+              <li>Ongoing support for equipment and supplies.</li>
+            </ul>
+          </div>
         </div>
         <ol class="steps">
           <li>
@@ -182,21 +227,58 @@
 
       <section class="section assurance">
         <div>
-          <h2>Why offices choose Neel Coffee Supply</h2>
+          <h2>Why offices stay with Neel Coffee Supply</h2>
           <p>
-            We are built for reliability and simplicity. You get a predictable coffee program that removes
-            procurement effort while still delivering a quality experience for your team.
+            We focus on reliability, quality, and convenience so your team enjoys a consistent coffee
+            experience every day. From onboarding to ongoing service, we make coffee one less thing for your
+            admins to manage.
           </p>
           <div class="checklist">
-            <div>✓ Proactive restocking based on real usage</div>
-            <div>✓ Clear monthly billing with no surprise fees</div>
-            <div>✓ Friendly, responsive support for admin teams</div>
+            <div>✓ Curated coffee options your team actually enjoys</div>
+            <div>✓ Scheduled service visits and predictable billing</div>
+            <div>✓ A single point of contact for support and adjustments</div>
           </div>
         </div>
         <img
           src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=1200&q=80"
           alt="Team meeting with coffee"
         />
+      </section>
+
+      <section id="our-story" class="section our-story">
+        <div class="section-heading">
+          <h2>Our story</h2>
+          <p>A quick look at how Neel Coffee Supply was built for busy offices.</p>
+        </div>
+        <details class="story-details">
+          <summary>Read our story</summary>
+          <div class="story-content">
+            <p><strong>Neel Coffee Supply — Our Story</strong></p>
+            <p>
+              Neel Coffee Supply was created after spending years working inside office environments and
+              seeing the same small problem repeat itself everywhere.
+            </p>
+            <p>
+              Coffee was always there — but managing it quietly fell onto someone’s plate. An admin, an HR
+              coordinator, or an office manager ended up tracking stock, placing last-minute orders,
+              handling complaints when coffee ran out, and juggling multiple suppliers. It wasn’t difficult
+              work, but it was constant, distracting, and unnecessary.
+            </p>
+            <p>We realized office coffee didn’t need to be exciting — it needed to be reliable.</p>
+            <p>
+              Neel Coffee Supply was built to take that responsibility off the list. We work with offices
+              that already provide coffee and want a simple, dependable way to keep it running without
+              constant attention. Our focus is on consistent supply, straightforward programs, and service
+              that works quietly in the background.
+            </p>
+            <p>
+              We don’t believe office coffee should require weekly decisions, emergency runs, or multiple
+              vendors. When it’s managed properly, it becomes one less thing to think about — and that’s
+              exactly the point.
+            </p>
+            <p><strong>Reliable Office Coffee. Made Simple.</strong></p>
+          </div>
+        </details>
       </section>
 
       <section id="contact" class="section contact">
@@ -206,6 +288,35 @@
             Email or call us to build a reliable coffee plan for your team. We respond quickly and make it
             easy to get started.
           </p>
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/info.neelcoffeesupply@gmail.com"
+            method="post"
+          >
+            <input type="hidden" name="_subject" value="New Neel Coffee Supply quote request" />
+            <input type="hidden" name="_captcha" value="false" />
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Work email
+              <input type="email" name="email" placeholder="you@company.com" required />
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" placeholder="Company name" />
+            </label>
+            <label>
+              Team size
+              <input type="text" name="team_size" placeholder="e.g. 25 people" />
+            </label>
+            <label>
+              Coffee needs
+              <textarea name="message" placeholder="Tell us about formats, delivery, or preferences."></textarea>
+            </label>
+            <button type="submit">Send request</button>
+          </form>
           <div class="contact-details">
             <div>
               <span>Email</span>
