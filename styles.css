@@ -223,7 +223,7 @@ img {
 }
 
 .card-list li::before {
-  content: "✓";
+  content: "→";
   margin-right: 8px;
   color: var(--accent-dark);
 }
@@ -278,12 +278,16 @@ img {
 }
 
 .how-it-works {
+  display: none;
   background: var(--latte);
   border-radius: 30px;
 }
 
+#how-it-works:target {
+  display: block;
+}
+
 .how-it-works-media {
-  display: none;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin-bottom: 32px;
@@ -342,7 +346,7 @@ img {
 }
 
 .video-details ul li::before {
-  content: "✓";
+  content: "→";
   margin-right: 8px;
   color: var(--accent-dark);
 }
@@ -359,6 +363,14 @@ img {
   padding: 20px;
   border-radius: 18px;
   box-shadow: var(--shadow);
+}
+
+.steps li::before {
+  content: "→";
+  color: var(--accent-dark);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .steps h3 {
@@ -409,6 +421,14 @@ img {
   gap: 32px;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.our-story {
+  display: none;
+}
+
+#our-story:target {
+  display: block;
 }
 
 .our-story .section-heading {
@@ -499,8 +519,12 @@ img {
 
 .contact-form {
   margin-top: 24px;
-  display: grid;
+  display: none;
   gap: 16px;
+}
+
+#contact:target .contact-form {
+  display: grid;
 }
 
 .contact-form label {
